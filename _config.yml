@@ -4,7 +4,7 @@ description: ""
 keywords: null
 author: John Doe
 language: zh-TW
-timezone: ""
+timezone: "AST"
 url: https://kumoram.github.io/my-site-1
 permalink: :title/
 permalink_defaults: null
