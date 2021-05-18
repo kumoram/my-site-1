@@ -23,10 +23,10 @@
 <meta property="article:tag" content="keywords3">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-  <link rel="stylesheet" href="/my-site-1/css/style.css?v=1621329995764">
+  <link rel="stylesheet" href="/my-site-1/css/style.css?v=1621337836156">
   
-  <link rel="stylesheet" href="/my-site-1/css/style.css?v=1621329995764">
-  <link rel="stylesheet" href="/my-site-1/lib/iconfont/iconfont.css?v=1621329995764">
+  <link rel="stylesheet" href="/my-site-1/css/style.css?v=1621337836156">
+  <link rel="stylesheet" href="/my-site-1/lib/iconfont/iconfont.css?v=1621337836156">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -117,6 +117,148 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/my-site-1/2021/05/Gh202105ac9e92a3a85212a7debdd3882d0ea401/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 33.33333333333333%;"> 
+                    <img data-src="https://ssimg.frontenduse.top/material/default_cover_v1.png" data-sizes="auto" alt="想要自己切换独立子站的主题" class="lazyload">
+                    <h1>想要自己切换独立子站的主题</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2021年05月18日</a>
+            <a><i class="nexmoefont icon-areachart"></i>1.1k 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>占坑，准备写：如何自己切换独立子站的主题</p>
+<p>话说Matataki的<a target="_blank" rel="noopener" href="https://test.matataki.io/p/102648">独立子站功能</a>上线之后，大受欢迎。最近呀，小瞬收到了一位热心用户的讯息，说她见到了一个<a target="_blank" rel="noopener" href="https://whyouare111.github.io/indieblog3/">特别漂亮的小站</a>，但是似乎无论如何选择主题和设置也没办法做到那种程度。</p>
+<p>于是小瞬仔细研究了一下那个站的配置，发现原来该位用户启用了一个非常好看，但是也是操作非常复杂的主题。于是到底要如何使用和操作呢。小瞬尝试和整理了一些教程，以供大家参考。</p>
+<h2 id="现有主题介绍"><a href="#现有主题介绍" class="headerlink" title="现有主题介绍"></a>现有主题介绍</h2><p>我们为用户精心挑选了数个与独立子站兼容较好的<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主题</a>。可在独立子站设置的下拉列表中进行选择。</p>
+<p>图片！</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>（默认主题）</li>
+</ul>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/15ef86f015f9a92e14377e1021fbb44a.png" alt="image.png" class="lazyload"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">NexT</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/JiangTJ/hexo-theme-cake">cake</a></li>
+</ul>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/5b7cee286ab5ea6291e422723db0ad5e.png" alt="image.png" class="lazyload"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">shellar</a></li>
+</ul>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/a292e2c41d206e7b604cf0dc78c50db9.png" alt="image.png" class="lazyload"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/theme-kaze/hexo-theme-Kaze">kaze</a></li>
+</ul>
+<h2 id="更复杂的切换主题方法"><a href="#更复杂的切换主题方法" class="headerlink" title="更复杂的切换主题方法"></a>更复杂的切换主题方法</h2><p>如果需要更深入地自定义主题，就让小瞬来教大家吧！</p>
+<p>其实很简单，只需要以下技能即可！</p>
+<ul>
+<li>会基础的GitHub操作：修改、提交文件等</li>
+<li>（可选）会使用各类文本编辑器，例如Atom、VS Code等</li>
+<li>（可选）会使用git</li>
+</ul>
+<h3 id="1-找到自己喜欢的Hexo主题！"><a href="#1-找到自己喜欢的Hexo主题！" class="headerlink" title="1.找到自己喜欢的Hexo主题！"></a>1.找到自己喜欢的Hexo主题！</h3><p>可以前往<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo的官方网站的主题页面</a>或在<a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-theme">npm下进行搜寻</a>、亦或者直接在GitHub或者搜索引擎中寻找均可！</p>
+<p>Hexo主题的添加方法，主要是以下两种：</p>
+<ul>
+<li>通过npm包直接进行安装</li>
+<li>手动下载主题文件</li>
+</ul>
+<p>将会对这两种方法分别进行讲述。</p>
+<h3 id="通过npm包直接进行安装"><a href="#通过npm包直接进行安装" class="headerlink" title="通过npm包直接进行安装"></a>通过npm包直接进行安装</h3><p>当然，我们也根本不用学习<a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm</a>的知识。</p>
+<p>如果这个Hexo主题的文档下面写着：“安装… 运行 npm i package-name” 之类的，就说明这个主题是可以直接通过<br>npm安装的啦！一般来说，通过在npm网站下进行搜索找到的主题都可以通过这个方法来安装。</p>
+<p>我们以<a target="_blank" rel="noopener" href="https://docs.nexmoe.com/hexo-nexmoe/start">nexmoe</a>，一个相当漂亮的主题为例。</p>
+<ol>
+<li>点击进入其文档，查看和总结其需要安装的主题。</li>
+</ol>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/0c79dd4dc3c22f64dcdb72094b3adeb1.png" alt="image.png" class="lazyload"></p>
+<p>有如下两个：</p>
+<ul>
+<li>hexo-theme-nexmoe</li>
+<li>hexo-wordcount</li>
+</ul>
+<ol start="2">
+<li>修改package.json</li>
+</ol>
+<p>进入自己的子站repo，点击最下面的“package.json”</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/ffe8dd2f6a139717881818cc74f33998.png" alt="image.png" class="lazyload"></p>
+<p>看到此文件最下方形如hexo-theme-xxx的包即为原来的hexo主题包。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/a49520e2e05bf2ffe39bc89b1365067e.png" alt="image.png" class="lazyload"></p>
+<p>删去此行，然后加入步骤1中总结的主题所需npm包（可无需写版本），后点击保存。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/ce8343af640fb6d0df587c0ef5f9d09e.png" alt="image.png" class="lazyload"></p>
+<ol start="3">
+<li>修改_config.yml</li>
+</ol>
+<p>在主题的文档中找到主题的指定名称。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/a8e8bc85effeeda1597daf1c221cb315.png" alt="image.png" class="lazyload"></p>
+<p>点击repo中的“_config.yml”。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/f42a37b03edcffc08263b5f6ae8658b3.png" alt="image.png" class="lazyload"></p>
+<p>将theme项的名称改为指定的的名称，此处为“nexmoe”，然后点击保存。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/774f1e5d0b86d9e95597be2f573997fe.png" alt="image.png" class="lazyload"></p>
+<ol start="4">
+<li>添加主题指定的config</li>
+</ol>
+<p>部分主题，请注意是部分。需要添加其特定的config文件，通常命名为_config.theme-name.yml。注意和Hexo的config文件_config.yml所不同。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/d3fd2e14085f6e98df0c63e791c77653.png" alt="image.png" class="lazyload"></p>
+<p>通常由主题的GitHub中找到其config文件。此处找到为<a target="_blank" rel="noopener" href="https://github.com/theme-nexmoe/hexo-theme-nexmoe/blob/master/_config.yml">_config.yml</a>。复制其全部内容。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/62331c845ca23d4797b5658f74a2b726.png" alt="image.png" class="lazyload"></p>
+<p>在子站repo的根目录中，新建_config.theme-name.yml，此处为_config.nexmoe.yml。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/55334bea1978492f1df1044c37e9ee7e.png" alt="image.png" class="lazyload"></p>
+<p>将上述样本文件内容全部粘贴进此文件中，然后可按照其描述进行配置。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/295c87c52c44a6af6545c4aa7f10eff1.png" alt="image.png" class="lazyload"></p>
+<p>点击保存。静待其渲染完成后，即可看到新新的子站啦！</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/85c680ffea15d5cec2e04db9bc2d4cee.png" alt="image.png" class="lazyload"></p>
+<h3 id="手动下载主题文件"><a href="#手动下载主题文件" class="headerlink" title="手动下载主题文件"></a>手动下载主题文件</h3><p>以<a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">Kratos-Rebirth</a>为例。</p>
+<ol>
+<li>下载repo</li>
+</ol>
+<p>进入子站repo的页面，找到其下载链接。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/7749995dd5acf4a0d8af3f98b72157ec.png" alt="image.png" class="lazyload"></p>
+<p>使用git下载子站repo。然后切换至目录中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;username&#x2F;repo.git</span><br><span class="line">cd repo</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>下载主题文件</li>
+</ol>
+<p>在repo文件夹中，使用git下载主题文件。目录具体要以主题文档为准。</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://ssimg.frontenduse.top/article/2021/05/18/264fcaace16922ae590c76aa6ea4cfe0.png" alt="image.png" class="lazyload"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;Candinya&#x2F;Kratos-Rebirth&#x2F; themes&#x2F;kratos-rebirth</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>修改config。</li>
+</ol>
+<p>打开目录下的_config.yml文件，将theme项改为需要的主题名称，此处为“kratos-rebirth”。</p>
+<p>图片</p>
+<ol start="4">
+<li>添加配置文件</li>
+</ol>
+<p>复制一份主题文件夹的_config.yml.example，改名为_config.yml，并添加所需项目。此处需要按需确定是放于根目录或主题文件夹。</p>
+<p>图片。</p>
+<p>使用git push进行上传。静待其渲染完成后，即可看到新新的子站啦！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin source</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/my-site-1/2021/05/Gh2021057b20e14721dbbf1320fd0bf8daa0f104/">
@@ -311,48 +453,6 @@
     </div>
     
     <div class="nexmoe-post">
-        <a href="/my-site-1/2021/05/Gh202105ac9e92a3a85212a7debdd3882d0ea401/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 33.33333333333333%;"> 
-                    <img data-src="https://ssimg.frontenduse.top/material/default_cover_v1.png" data-sizes="auto" alt="想要自己切换独立子站的主题" class="lazyload">
-                    <h1>想要自己切换独立子站的主题</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2021年05月13日</a>
-            <a><i class="nexmoefont icon-areachart"></i>307 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-        </div>
-
-        <article>
-            
-                <p>占坑，准备写：如何自己切换独立子站的主题</p>
-<p>话说Matataki的<a target="_blank" rel="noopener" href="https://test.matataki.io/p/102648">独立子站功能</a>上线之后，大受欢迎。最近呀，小安收到了一位热心用户的讯息，说她见到了一个<a href="">特别漂亮的小站</a>，但是似乎无论如何选择主题和设置也没办法做到那种程度。</p>
-<p>于是小安仔细研究了一下那个站的配置，发现原来该位用户启用了一个非常好看，但是也是操作非常复杂的主题。于是到底要如何使用和操作呢。小安尝试和整理了一些教程，以供大家参考。</p>
-<h2 id="现有主题介绍"><a href="#现有主题介绍" class="headerlink" title="现有主题介绍"></a>现有主题介绍</h2><p>我们为用户精心挑选了数个与独立子站兼容较好的<a href="">Hexo主题</a>。可在独立子站设置的下拉列表中进行选择。</p>
-<p>图片！</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>（默认主题）</li>
-<li><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">NexT</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/JiangTJ/hexo-theme-cake">cake</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">shellar</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/theme-kaze/hexo-theme-Kaze">kaze</a></li>
-</ul>
-<h2 id="更复杂的切换主题方法"><a href="#更复杂的切换主题方法" class="headerlink" title="更复杂的切换主题方法"></a>更复杂的切换主题方法</h2><p>如果需要更深入地自定义主题，就让小安来教大家吧！</p>
-<p>首先是确认一下自己有以下技能：</p>
-<ul>
-<li>会基础的GitHub操作</li>
-<li>（可选）会使用各类文本编辑器，例如Atom、VS Code等</li>
-<li>（可选）会使用git</li>
-</ul>
-
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
         <a href="/my-site-1/2021/05/Gh202105348ca4ade3339eb77ed529f54d61f803/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 33.33333333333333%;"> 
@@ -503,7 +603,7 @@
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
  
 
-<script src="/my-site-1/js/app.js?v=1621329995764"></script>
+<script src="/my-site-1/js/app.js?v=1621337836157"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
