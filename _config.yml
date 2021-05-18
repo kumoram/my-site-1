@@ -1,8 +1,8 @@
-title: 我的小站
-subtitle: subtitle123456
-description: 我的小站不需要描述
+title: 我的小站（这个是标题）
+subtitle: 我的小小站（这个是子标题）
+description: 我的小站不需要描述（这个是描述）
 keywords: keywords3
-author: that is me
+author: that is me（这个是作者）
 language: es
 timezone: Etc/GMT+2
 url: https://kumoram.github.io/my-site-1
