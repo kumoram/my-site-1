@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Itim|Lobster.css">
+  <meta name="description" content="独立子站功能在👉测试网👈公测中   独立子站是什么？目前Matataki的主页，是一个混合了各方文章的页面。我们希望能突出个人创作者的力量，给创作者拥有不一样的个人网站的权利。 但是以现在的技术来说，创建个人网站是一个艰苦的工作。即使是可以部署到GitHub Pages的Hexo。 我们希望给到用户最大的方便，让用户能够“一键式”生成个人的网站。于是结合上述技术，加上Matataki独创的方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="子站教程beta">
+<meta property="og:url" content="https://kumoram.github.io/my-site-1/2021/05/Gh202105958aab5612f98576cb3c2af552c6c16d/index.html">
+<meta property="og:site_name" content="我的小站">
+<meta property="og:description" content="独立子站功能在👉测试网👈公测中   独立子站是什么？目前Matataki的主页，是一个混合了各方文章的页面。我们希望能突出个人创作者的力量，给创作者拥有不一样的个人网站的权利。 但是以现在的技术来说，创建个人网站是一个艰苦的工作。即使是可以部署到GitHub Pages的Hexo。 我们希望给到用户最大的方便，让用户能够“一键式”生成个人的网站。于是结合上述技术，加上Matataki独创的方">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/1649accac2248c860113c0d2e4d759e7.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/13/1b41fcce9b67eb588bf105b896b886a9.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/9592d397316923bf555154005abf32f6.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/7f1eaa5d252ea9aa62b17227d8b51a6c.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/37eb0913238bd5c5259126fe2aa24431.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/7fc9f8a935a9a66dda41d45add0345f1.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/8450e083a56154b7ebd3b8c98fd9def9.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/a04c37668cbc5183a99f57eb6c1576ab.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/6ff1f55d6b00c25a4617ac511f4a2d14.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/9adee05ab089b99376caeb20701b01f9.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/fa0d99cc7582dbb8340ea64f3a618faf.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/26095a1e9f26af19f5fd3c817223ac60.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/14/85e639b56ee2f5c062815891609bcda5.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/14/2aa5b92a5bdce5edd64dea9348b09040.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/2a797fa45239ba84143510c6eef18e20.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/84f2aca22f430e9cdb790ac48267e185.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/bee0c1be5b9fc0d41d87a59eef9c03b2.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/14/b68e4c22e92711f2d53d3981e336e537.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/86871512e6d3d03b568ed9b7e846ee29.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/f59273112374d6d9669b3b77cf73c431.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/858d2d4c8c2e3aba69a74a598155d2a7.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/08/8ed5bf6962261fe2ee2496b98b6eb038.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/1550ee380cf410f084002ee9f4283e17.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/0bde7d52b46933fb792556d0a8e1e22e.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/75e145a13c5fcb791615337d19027fe8.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/05/12/c7e9488e5d0b858d15b10c898d2515a9.png">
+<meta property="article:published_time" content="2021-05-14T08:28:21.000Z">
+<meta property="article:modified_time" content="2021-05-18T04:23:12.665Z">
+<meta property="article:author" content="that is me">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ssimg.frontenduse.top/article/2021/05/08/1649accac2248c860113c0d2e4d759e7.png">  <title>子站教程beta | 我的小站</title>    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://kumoram.github.io/my-site-1/2021/05/Gh202105958aab5612f98576cb3c2af552c6c16d/"},"headline":"子站教程beta","image":[],"datePublished":"2021-05-14T08:28:21.000Z","dateModified":"2021-05-18T04:23:12.665Z","author":{"@type":"Person","name":"that is me"},"publisher":{"@type":"Organization","name":"that is me","logo":{"@type":"ImageObject","url":"https://kumoram.github.io/my-site-1/images/avatar.gif"}}}</script><link rel="stylesheet" type="text/css" href="/my-site-1/css/injector/main.css" /><link rel="preload" as="style" href="/my-site-1/css/injector/dark.css" /><link rel="preload" as="style" href="/my-site-1/css/injector/light.css" /><link rel="preload" as="style" href="/my-site-1/css/injector/auto.css" /><meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    
+  <header class="main-header">
+    <div class="header-inner card"><div class="brand">
+  <div class="site-meta">
+    <div class="custom-logo-site-title">
+      <a href="/my-site-1/">
+        <span class="site-title">我的小站</span>
+      </a>
+    </div>
+    
+    <p class="site-subtitle">subtitle123456</p>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>    </button>
+  </div>
+</div>
+<nav class="site-nav">
+  <ul class="menu">
+    <li class="menu-item menu-item-home"><a href="/my-site-1/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>Home</a></li><li class="menu-item menu-item-archives"><a href="/my-site-1/archives/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="archive" class="svg-inline--fa fa-archive fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"></path></svg>Archives</a></li>  </ul>
+</nav>
+</div>
+  </header>
+
+  <div class="flex-container">
+
+    
+
+<aside class="sidebar">
+
+  <div class="header-inner card">
+    <div class="brand">
+  <div class="site-meta">
+    <div class="custom-logo-site-title">
+      <a href="/my-site-1/">
+        <span class="site-title">我的小站</span>
+      </a>
+    </div>
+    
+    <p class="site-subtitle">subtitle123456</p>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>    </button>
+  </div>
+</div>
+<nav class="site-nav">
+  <ul class="menu">
+    <li class="menu-item menu-item-home"><a href="/my-site-1/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>Home</a></li><li class="menu-item menu-item-archives"><a href="/my-site-1/archives/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="archive" class="svg-inline--fa fa-archive fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"></path></svg>Archives</a></li>  </ul>
+</nav>
+  </div>
+
+  <div class="sidebar-inner card">
+
+    
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc sidebar-nav-active">
+        Table of Contents
+      </li>
+      <li class="sidebar-nav-overview">
+        Overview
+      </li>
+    </ul>
+    <div class="post-toc-wrap sidebar-panel sidebar-panel-active">
+      <div class="post-toc"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8B%AC%E7%AB%8B%E5%AD%90%E7%AB%99%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">独立子站是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8B%AC%E7%AB%8B%E5%AD%90%E7%AB%99%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97"><span class="nav-number">2.</span> <span class="nav-text">独立子站用户指南</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%A5%E5%8F%8A%E5%8F%91%E6%96%87"><span class="nav-number">2.1.</span> <span class="nav-text">创建以及发文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">修改设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E6%93%8D%E4%BD%9C"><span class="nav-number">2.3.</span> <span class="nav-text">其他操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%EF%BC%9A%E7%9B%B4%E6%8E%A5%E5%9C%A8GitHub%E4%B8%AD%E8%BF%9B%E8%A1%8C%E7%BC%96%E8%BE%91"><span class="nav-number">2.4.</span> <span class="nav-text">进阶：直接在GitHub中进行编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%EF%BC%9A%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D"><span class="nav-number">2.5.</span> <span class="nav-text">进阶：设置自己的域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%EF%BC%9A%E6%8C%89%E9%9C%80%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="nav-number">2.6.</span> <span class="nav-text">进阶：按需更改主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%87%E5%88%B0%E9%94%99%E8%AF%AF%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F"><span class="nav-number">2.7.</span> <span class="nav-text">遇到错误怎么办？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-amp-A"><span class="nav-number">3.</span> <span class="nav-text">Q&amp;A</span></a></li></ol></div>
+    </div>
+    <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview">
+  <div class="site-author">
+    
+    <img class="site-author-image" src="/my-site-1/images/avatar.gif"
+      alt="that is me" />
+    
+    <p class="site-author-name">that is me</p>
+    <div class="site-description">我的小站不需要描述</div>
+  </div>
+
+  <nav class="site-state">
+    
+    <div class="site-state-item site-state-posts">
+      <a href="/my-site-1/archives/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">posts</span>
+      </a>
+    </div>
+    
+
+    
+
+    
+  </nav>
+
+  
+</div>
+    </div>
+
+    
+
+  </div>
+</aside>
+
+    <div class="flex-main">
+
+      <main>
+        
+        <div id="content" class="content">
+          <div>
+  
+
+<article class="post post-type-normal">
+  <div class="card post-block">
+
+    
+
+    <header class="post-header">
+
+      
+      <h1 class="post-title">
+        
+        子站教程beta
+        
+      </h1>
+      
+
+      <div class="post-meta">
+
+  
+  
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"></path></svg>
+    </span>
+    <span class="post-meta-item-text">Posted on</span>
+    <time title="Created: 2021-05-14 06:28:21">2021-05-14</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+</div>
+
+    </header>
+
+    <div class="post-body">
+      
+      <div style="text-align:center">
+<span style="color:orange;font-weight:700;border:orange 2px solid; border-radius: 5px;padding:8px">独立子站功能在👉<a href="https://test.matataki.io/setting/indieblog" target="_blank" style="text-decoration:none;color:#fc7299">测试网</a>👈公测中</span>
+</div>
+
+<h2 id="独立子站是什么？"><a href="#独立子站是什么？" class="headerlink" title="独立子站是什么？"></a>独立子站是什么？</h2><p>目前Matataki的主页，是一个混合了各方文章的页面。我们希望能突出个人创作者的力量，给创作者拥有不一样的个人网站的权利。</p>
+<p>但是以现在的技术来说，<strong>创建个人网站是一个艰苦的工作</strong>。即使是可以部署到<a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>的<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>。</p>
+<p>我们希望给到用户最大的方便，让用户能够“一键式”生成个人的网站。于是结合上述技术，加上Matataki独创的方法，“<strong>用Matataki一键部署个人网站</strong>”的功能出现了，我们将之成为“独立子站”。</p>
+<p>可见<a target="_blank" rel="noopener" href="https://b23.tv/RbBVR0">小岛老师的视频（bilibili）</a>👇</p>
+<div align="center">
+<iframe src="//player.bilibili.com/player.html?aid=930239363&bvid=BV1UK4y1o7Wm&cid=326137778&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+<h2 id="独立子站用户指南"><a href="#独立子站用户指南" class="headerlink" title="独立子站用户指南"></a>独立子站用户指南</h2><h3 id="创建以及发文"><a href="#创建以及发文" class="headerlink" title="创建以及发文"></a>创建以及发文</h3><p>在头像处的下拉列表中点击“我的账户”前往个人用户设置页面。</p>
+<div align="center">
+<img src="https://ssimg.frontenduse.top/article/2021/05/08/1649accac2248c860113c0d2e4d759e7.png" alt="" align="center">
+</div>
+
+<p>点击“独立子站”，进入独立子站创建页面。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/13/1b41fcce9b67eb588bf105b896b886a9.png" alt="image.png"></p>
+<p>独立子站功能将会在个人GitHub账户创建一个repo来储存文章、以及相应的配置。改动“仓库名称”项目，设置一个满意的名称！</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/9592d397316923bf555154005abf32f6.png" alt="image.png"></p>
+<p>如果该repo已经存在，请勿使用该名称。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/7f1eaa5d252ea9aa62b17227d8b51a6c.png" alt="image.png"></p>
+<p>点击创建，静待稍候。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/37eb0913238bd5c5259126fe2aa24431.png" alt="image.png"></p>
+<p>创建完成之后，点击“前往设置页面”。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/7fc9f8a935a9a66dda41d45add0345f1.png" alt="image.png"></p>
+<p>点击“仓库设置”前往GitHub repo的设置页面，选择branch为“main”，并点击“save”保存。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/8450e083a56154b7ebd3b8c98fd9def9.png" alt="image.png"></p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/a04c37668cbc5183a99f57eb6c1576ab.png" alt="image.png"></p>
+<p>发表你在子站上的第一篇文章吧！记得发布时选择保存位置为“独立子站”。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/6ff1f55d6b00c25a4617ac511f4a2d14.png" alt="image.png"></p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/9adee05ab089b99376caeb20701b01f9.png" alt="image.png"></p>
+<p>等待渲染完成，前往子站查看吧！</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/fa0d99cc7582dbb8340ea64f3a618faf.png" alt="image.png"></p>
+<h3 id="修改设置"><a href="#修改设置" class="headerlink" title="修改设置"></a>修改设置</h3><p>依然是前往个人设置中的“独立子站”页面。当你的独立子站创建完成之后，即可编辑设置。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/26095a1e9f26af19f5fd3c817223ac60.png" alt="image.png"></p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/14/85e639b56ee2f5c062815891609bcda5.png" alt="image.png"></p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/14/2aa5b92a5bdce5edd64dea9348b09040.png" alt="image.png"></p>
+<p>填写相关信息，即可进行更改。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/2a797fa45239ba84143510c6eef18e20.png" alt="image.png"></p>
+<p>语言、时区等可在下拉列表中进行选择：</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/84f2aca22f430e9cdb790ac48267e185.png" alt="image.png"></p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/bee0c1be5b9fc0d41d87a59eef9c03b2.png" alt="image.png"></p>
+<p>我们也收录了一些与子站功能适配较好的主题以供选择。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/14/b68e4c22e92711f2d53d3981e336e537.png" alt="image.png"></p>
+<p>若需更换其他的主题，敬请参阅<a target="_blank" rel="noopener" href="https://test.matataki.io/p/102649#%E7%8E%B0%E6%9C%89%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D">现有主题介绍</a>。</p>
+<p>更改之后，点击保存即可。</p>
+<h3 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h3><ul>
+<li>编辑文章</li>
+</ul>
+<p>⭐对独立子站上的文章进行编辑，<strong>不可转换至IPFS储存</strong>。IPFS上的文章编辑后也不可转换至子站储存。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/86871512e6d3d03b568ed9b7e846ee29.png" alt="image.png"></p>
+<p>除此之外，编辑独立子站上的文章操作与编辑IPFS上的文章无异。点击文章右侧的“设置”&gt;“编辑”即可。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/f59273112374d6d9669b3b77cf73c431.png" alt="image.png"></p>
+<ul>
+<li>转让文章</li>
+</ul>
+<p>⭐转让自己在独立子站下的文章，需要确认<strong>转入方为已经创建了独立子站的用户</strong>，且<strong>接受文章转让</strong>。否则会转让失败。请再次向转入方确认。</p>
+<p>同时，转让文章成功之后，自己子站以及GitHub repo中的文章文件不会删除，以供自行进行编辑或删除操作。</p>
+<p>转让独立子站下的文章操作与转移IPFS上的文章无异。点击文章右侧的“设置”&gt;“转让”，选择接收者即可。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/858d2d4c8c2e3aba69a74a598155d2a7.png" alt="image.png"></p>
+<ul>
+<li>发布需要购买/Fan票的文章</li>
+</ul>
+<p>目前独立子站的文章无法进行此操作。</p>
+<h3 id="进阶：直接在GitHub中进行编辑"><a href="#进阶：直接在GitHub中进行编辑" class="headerlink" title="进阶：直接在GitHub中进行编辑"></a>进阶：直接在GitHub中进行编辑</h3><p>类似<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>的目录设置，文章被储存于 source 分支的 /_posts 目录下。 </p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/08/8ed5bf6962261fe2ee2496b98b6eb038.png" alt="image.png"></p>
+<p>在该目录下，编辑已经在Matataki中发表的文章，不仅独立子站中会显示变更，也会同步至Matataki中。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/1550ee380cf410f084002ee9f4283e17.png" alt="image.png"></p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/0bde7d52b46933fb792556d0a8e1e22e.png" alt="image.png"></p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/75e145a13c5fcb791615337d19027fe8.png" alt="image.png"></p>
+<p>对于Hexo的设置文件，_config.yml，也可以手动进行编辑。编辑时敬请参考<a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration.html">Hexo的设置文档</a>。</p>
+<p><img data-src="https://ssimg.frontenduse.top/article/2021/05/12/c7e9488e5d0b858d15b10c898d2515a9.png" alt="image.png"></p>
+<h3 id="进阶：设置自己的域名"><a href="#进阶：设置自己的域名" class="headerlink" title="进阶：设置自己的域名"></a>进阶：设置自己的域名</h3><h3 id="进阶：按需更改主题"><a href="#进阶：按需更改主题" class="headerlink" title="进阶：按需更改主题"></a>进阶：按需更改主题</h3><p>若需更换其他的主题，敬请参阅<a target="_blank" rel="noopener" href="https://test.matataki.io/p/102649#%E7%8E%B0%E6%9C%89%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D">《想要自己切换独立子站的主题 》</a>。</p>
+<h3 id="遇到错误怎么办？"><a href="#遇到错误怎么办？" class="headerlink" title="遇到错误怎么办？"></a>遇到错误怎么办？</h3><p>创建失败：<del>可先检查GitHub下有无重名的repo。若有，则需删除再试。</del></p>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><ol>
+<li>发文相关</li>
+</ol>
+<p>Q: 当我在Matataki中选择发布文章到我的独立子站后，文章内容还会储存到IPFS上吗？</p>
+<p>A: 不会，只会储存至用户所设置的GitHub repo中。</p>
+<ol start="2">
+<li>设置相关</li>
+</ol>
+<p>Q: 为什么我编辑了子站设置之后，子站却显示404/空白页面？</p>
+<p>A: 独立子站创建之后，需要发布一篇文章才会有页面的显示。或者也可能是因为输入了不正确的子站设置。敬请参阅Hexo的设置进行修改。</p>
+      
+    </div>
+
+    
+
+
+
+
+
+    
+
+    
+        
+
+    
+    <footer class="post-footer">
+      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/my-site-1/2021/05/Gh2021052ddd7c001094b5c89cab948143e0be78/" rel="prev" title="gao">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+      gao
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/my-site-1/2021/05/Gh2021057b20e14721dbbf1320fd0bf8daa0f104/" rel="next" title="子站教程极速版">
+      子站教程极速版
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+    </a></div>
+    </div>    </footer>
+    
+  </div>
+</article>
+</div>
+        </div>
+        
+
+
+
+      </main>
+
+      <footer class="footer">
+        <div>
+          <div class="copyright">
+  
+  &copy; 
+  <span>2021</span>
+  <span class="with-love">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+    <i class="[object Object]"></i>
+  </span>
+  <span class="author">that is me</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v5.4.0
+</div>
+
+<span class="post-meta-divider">|</span>
+
+<div class="theme-info">
+  Theme – <a href="https://github.com/JiangTJ/hexo-theme-cake" class="theme-link" rel="noopener" target="_blank">Cake</a> v3.4.1
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+  <script src="/my-site-1/js/injector.js"></script>
+</body>
+
+</html>
