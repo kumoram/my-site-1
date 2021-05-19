@@ -23,8 +23,8 @@
 <meta property="og:description" content="占坑，准备写：如何自己切换独立子站的主题 话说Matataki的独立子站功能上线之后，大受欢迎。最近呀，小瞬收到了一位热心用户的讯息，说她见到了一个特别漂亮的小站，但是似乎无论如何选择主题和设置也没办法做到那种程度。 于是小瞬仔细研究了一下那个站的配置，发现原来该位用户启用了一个非常好看，但是也是操作非常复杂的主题。于是到底要如何使用和操作呢。小瞬尝试和整理了一些教程，以供大家参考。 现有主题介绍">
 <meta property="og:locale" content="es_ES">
 <meta property="og:image" content="https://kumoram.github.io/my-site-1/null">
-<meta property="article:published_time" content="2021-05-18T13:36:55.000Z">
-<meta property="article:modified_time" content="2021-05-19T04:51:17.388Z">
+<meta property="article:published_time" content="2021-05-19T07:14:53.000Z">
+<meta property="article:modified_time" content="2021-05-19T05:15:07.491Z">
 <meta property="article:author" content="that is me（这个是作者）">
 <meta property="article:tag" content="keywords3">
 <meta name="twitter:card" content="summary">
@@ -146,13 +146,13 @@
                 
                 
                 <ul class="kratos-post-meta text-center">
-                    <li><i class="fa fa-calendar"></i> 2021-05-18</li>
+                    <li><i class="fa fa-calendar"></i> 2021-05-19</li>
                     <li><i class="fa fa-user"></i> 作者 that is me（这个是作者）</li>
                     <li>
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~1.84K
+                            ~1.96K
                         
                         字
                     </li>
@@ -161,7 +161,7 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1621399877388"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1621401307491"></time> 前，其中的内容可能需要更新。
                 </div>
                 
                 <hr />
@@ -175,7 +175,6 @@
 </ul>
 <p><img src="https://ssimg.frontenduse.top/article/2021/05/18/15ef86f015f9a92e14377e1021fbb44a.png" alt="image.png"></p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">NexT</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/JiangTJ/hexo-theme-cake">cake</a></li>
 </ul>
 <p><img src="https://ssimg.frontenduse.top/article/2021/05/18/5b7cee286ab5ea6291e422723db0ad5e.png" alt="image.png"></p>
@@ -185,6 +184,7 @@
 <p><img src="https://ssimg.frontenduse.top/article/2021/05/18/a292e2c41d206e7b604cf0dc78c50db9.png" alt="image.png"></p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/theme-kaze/hexo-theme-Kaze">kaze</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">NexT</a></li>
 </ul>
 <h2 id="更复杂的切换主题方法"><a href="#更复杂的切换主题方法" class="headerlink" title="更复杂的切换主题方法"></a>更复杂的切换主题方法</h2><p>如果需要更深入地自定义主题，就让小瞬来教大家吧！</p>
 <p>其实很简单，只需要以下技能即可！</p>
@@ -255,7 +255,7 @@
 <ol start="2">
 <li>下载主题文件</li>
 </ol>
-<p>在repo文件夹中，使用git下载主题文件。目录具体要以主题文档为准。</p>
+<p>在repo文件夹中，使用git下载主题文件。目录具体要以主题文档为准。这里的样板主题，需要进入themes/kratos-rebirth文件夹中，删除.git、.github、.gitignore等文件（夹）。</p>
 <p><img src="https://ssimg.frontenduse.top/article/2021/05/18/264fcaace16922ae590c76aa6ea4cfe0.png" alt="image.png"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;Candinya&#x2F;Kratos-Rebirth&#x2F; themes&#x2F;kratos-rebirth</span><br></pre></td></tr></table></figure>
 
@@ -263,27 +263,16 @@
 <li>修改config。</li>
 </ol>
 <p>打开目录下的_config.yml文件，将theme项改为需要的主题名称，此处为“kratos-rebirth”。</p>
-<p>图片</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/19/7c37bc5f02af914db6611516b21ddf35.png" alt="image.png"></p>
 <ol start="4">
 <li>添加配置文件</li>
 </ol>
 <p>复制一份主题文件夹的_config.yml.example，改名为_config.yml，并添加所需项目。此处需要按需确定是放于根目录或主题文件夹。</p>
-<p>图片。</p>
-<p>使用git push进行上传。静待其渲染完成后，即可看到新新的子站啦！</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin source</span><br></pre></td></tr></table></figure>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/19/acd8298499ed9bebbda4ed4a3252024a.png" alt="image.png"></p>
+<p>在repo文件夹中，使用git push进行上传。静待其渲染完成后，即可看到新新的子站啦！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;add new theme&quot;</span><br><span class="line">git push origin source</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/19/1819d7b73cef4c7c064c995384eea29a.png" alt="image.png"></p>
 
             </div>
             
