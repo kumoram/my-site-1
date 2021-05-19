@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="">
+  <title>子站教程beta | 我的小站（这个是标题）</title>
+  <meta name="author" content="that is me（这个是作者）" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="独立子站功能在👉测试网👈公测中   独立子站是什么？目前Matataki的主页，是一个混合了各方文章的页面。我们希望能突出个人创作者的力量，给创作者拥有不一样的个人网站的权利。 但是以现在的技术来说，创建个人网站是一个艰苦的工作。即使是可以部署到GitHub Pages的Hexo。 我们希望给到用户最大的方便，让用户能够“一键式”生成个人的网站。于是结合上述技术，加上Matataki独创的方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="子站教程beta">
+<meta property="og:url" content="https://kumoram.github.io/my-site-1/2021/05/Gh202105958aab5612f98576cb3c2af552c6c16d/index.html">
+<meta property="og:site_name" content="我的小站（这个是标题）">
+<meta property="og:description" content="独立子站功能在👉测试网👈公测中   独立子站是什么？目前Matataki的主页，是一个混合了各方文章的页面。我们希望能突出个人创作者的力量，给创作者拥有不一样的个人网站的权利。 但是以现在的技术来说，创建个人网站是一个艰苦的工作。即使是可以部署到GitHub Pages的Hexo。 我们希望给到用户最大的方便，让用户能够“一键式”生成个人的网站。于是结合上述技术，加上Matataki独创的方">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://kumoram.github.io/my-site-1/null">
+<meta property="article:published_time" content="2021-05-14T08:28:21.000Z">
+<meta property="article:modified_time" content="2021-05-19T04:44:49.252Z">
+<meta property="article:author" content="that is me（这个是作者）">
+<meta property="article:tag" content="keywords3">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kumoram.github.io/my-site-1/null">
+<meta name="twitter:site" content="@null">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/my-site-1/css/kratosr.min.css" type="text/css" media="all">
+  
+    <link rel="stylesheet" id="highlight-css" href="/my-site-1/css/highlight/night-eighties.min.css" type="text/css" media="all">
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="nprogress-css" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" type="text/css" media="all">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  
+    <link rel="stylesheet" id="darkmode-css" href="/my-site-1/css/kr-dark.min.css" type="text/css" media="all">
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li><a href="/my-site-1/"><i class="fa fa-home"></i>首页</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/my-site-1/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/my-site-1/friends/"><i class="fa fa-paw"></i>好伙伴</a></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a><i class="fa fa-link"></i>链接</a>
+                                            <ul class="sub-menu">
+                                                
+                                                    
+                                                
+                                                    
+                                                        <li><a target="_blank" rel="noopener" href="https://candinya.com">作者博客</a></li>
+                                                    
+                                                
+                                                    
+                                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">项目链接</a></li>
+                                                    
+                                                
+                                            </ul>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/my-site-1/">我的小站（这个是标题）</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/my-site-1/">
+                        <h2>我的小站（这个是标题）</h2> <br />
+                        <span>我的小小站（这个是子标题）</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        <section class="col-md-8">
+    <article>
+        <div class="kratos-hentry kratos-post-inner clearfix">
+            <header class="kratos-entry-header">
+                
+                    <h1 class="kratos-entry-title text-center">子站教程beta</h1>
+                
+                
+                <ul class="kratos-post-meta text-center">
+                    <li><i class="fa fa-calendar"></i> 2021-05-14</li>
+                    <li><i class="fa fa-user"></i> 作者 that is me（这个是作者）</li>
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~1.52K
+                        
+                        字
+                    </li>
+                    
+                </ul>
+            </header>
+            <div class="kratos-post-content">
+                <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                    本文最后编辑于 <time datetime="1621399489252"></time> 前，其中的内容可能需要更新。
+                </div>
+                
+                <hr />
+                <div style="text-align:center">
+<span style="color:orange;font-weight:700;border:orange 2px solid; border-radius: 5px;padding:8px">独立子站功能在👉<a href="https://test.matataki.io/setting/indieblog" target="_blank" style="text-decoration:none;color:#fc7299">测试网</a>👈公测中</span>
+</div>
+
+<h2 id="独立子站是什么？"><a href="#独立子站是什么？" class="headerlink" title="独立子站是什么？"></a>独立子站是什么？</h2><p>目前Matataki的主页，是一个混合了各方文章的页面。我们希望能突出个人创作者的力量，给创作者拥有不一样的个人网站的权利。</p>
+<p>但是以现在的技术来说，<strong>创建个人网站是一个艰苦的工作</strong>。即使是可以部署到<a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>的<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>。</p>
+<p>我们希望给到用户最大的方便，让用户能够“一键式”生成个人的网站。于是结合上述技术，加上Matataki独创的方法，“<strong>用Matataki一键部署个人网站</strong>”的功能出现了，我们将之成为“独立子站”。</p>
+<p>可见<a target="_blank" rel="noopener" href="https://b23.tv/RbBVR0">小岛老师的视频（bilibili）</a>👇</p>
+<div align="center">
+<iframe src="//player.bilibili.com/player.html?aid=930239363&bvid=BV1UK4y1o7Wm&cid=326137778&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+<h2 id="独立子站用户指南"><a href="#独立子站用户指南" class="headerlink" title="独立子站用户指南"></a>独立子站用户指南</h2><h3 id="创建以及发文"><a href="#创建以及发文" class="headerlink" title="创建以及发文"></a>创建以及发文</h3><p>在头像处的下拉列表中点击“我的账户”前往个人用户设置页面。</p>
+<div align="center">
+<img src="https://ssimg.frontenduse.top/article/2021/05/08/1649accac2248c860113c0d2e4d759e7.png" alt="" align="center">
+</div>
+
+<p>点击“独立子站”，进入独立子站创建页面。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/13/1b41fcce9b67eb588bf105b896b886a9.png" alt="image.png"></p>
+<p>独立子站功能将会在个人GitHub账户创建一个repo来储存文章、以及相应的配置。改动“仓库名称”项目，设置一个满意的名称！</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/9592d397316923bf555154005abf32f6.png" alt="image.png"></p>
+<p>如果该repo已经存在，请勿使用该名称。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/7f1eaa5d252ea9aa62b17227d8b51a6c.png" alt="image.png"></p>
+<p>点击创建，静待稍候。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/37eb0913238bd5c5259126fe2aa24431.png" alt="image.png"></p>
+<p>创建完成之后，点击“前往设置页面”。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/7fc9f8a935a9a66dda41d45add0345f1.png" alt="image.png"></p>
+<p>点击“仓库设置”前往GitHub repo的设置页面，选择branch为“main”，并点击“save”保存。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/8450e083a56154b7ebd3b8c98fd9def9.png" alt="image.png"></p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/a04c37668cbc5183a99f57eb6c1576ab.png" alt="image.png"></p>
+<p>发表你在子站上的第一篇文章吧！记得发布时选择保存位置为“独立子站”。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/6ff1f55d6b00c25a4617ac511f4a2d14.png" alt="image.png"></p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/9adee05ab089b99376caeb20701b01f9.png" alt="image.png"></p>
+<p>等待渲染完成，前往子站查看吧！</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/fa0d99cc7582dbb8340ea64f3a618faf.png" alt="image.png"></p>
+<h3 id="修改设置"><a href="#修改设置" class="headerlink" title="修改设置"></a>修改设置</h3><p>依然是前往个人设置中的“独立子站”页面。当你的独立子站创建完成之后，即可编辑设置。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/26095a1e9f26af19f5fd3c817223ac60.png" alt="image.png"></p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/14/85e639b56ee2f5c062815891609bcda5.png" alt="image.png"></p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/14/2aa5b92a5bdce5edd64dea9348b09040.png" alt="image.png"></p>
+<p>填写相关信息，即可进行更改。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/2a797fa45239ba84143510c6eef18e20.png" alt="image.png"></p>
+<p>语言、时区等可在下拉列表中进行选择：</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/84f2aca22f430e9cdb790ac48267e185.png" alt="image.png"></p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/bee0c1be5b9fc0d41d87a59eef9c03b2.png" alt="image.png"></p>
+<p>我们也收录了一些与子站功能适配较好的主题以供选择。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/14/b68e4c22e92711f2d53d3981e336e537.png" alt="image.png"></p>
+<p>若需更换其他的主题，敬请参阅<a target="_blank" rel="noopener" href="https://test.matataki.io/p/102649#%E7%8E%B0%E6%9C%89%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D">现有主题介绍</a>。</p>
+<p>更改之后，点击保存即可。</p>
+<h3 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h3><ul>
+<li>编辑文章</li>
+</ul>
+<p>⭐对独立子站上的文章进行编辑，<strong>不可转换至IPFS储存</strong>。IPFS上的文章编辑后也不可转换至子站储存。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/86871512e6d3d03b568ed9b7e846ee29.png" alt="image.png"></p>
+<p>除此之外，编辑独立子站上的文章操作与编辑IPFS上的文章无异。点击文章右侧的“设置”&gt;“编辑”即可。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/f59273112374d6d9669b3b77cf73c431.png" alt="image.png"></p>
+<ul>
+<li>转让文章</li>
+</ul>
+<p>⭐转让自己在独立子站下的文章，需要确认<strong>转入方为已经创建了独立子站的用户</strong>，且<strong>接受文章转让</strong>。否则会转让失败。请再次向转入方确认。</p>
+<p>同时，转让文章成功之后，自己子站以及GitHub repo中的文章文件不会删除，以供自行进行编辑或删除操作。</p>
+<p>转让独立子站下的文章操作与转移IPFS上的文章无异。点击文章右侧的“设置”&gt;“转让”，选择接收者即可。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/858d2d4c8c2e3aba69a74a598155d2a7.png" alt="image.png"></p>
+<ul>
+<li>发布需要购买/Fan票的文章</li>
+</ul>
+<p>目前独立子站的文章无法进行此操作。</p>
+<h3 id="进阶：直接在GitHub中进行编辑"><a href="#进阶：直接在GitHub中进行编辑" class="headerlink" title="进阶：直接在GitHub中进行编辑"></a>进阶：直接在GitHub中进行编辑</h3><p>类似<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>的目录设置，文章被储存于 source 分支的 /_posts 目录下。 </p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/08/8ed5bf6962261fe2ee2496b98b6eb038.png" alt="image.png"></p>
+<p>在该目录下，编辑已经在Matataki中发表的文章，不仅独立子站中会显示变更，也会同步至Matataki中。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/1550ee380cf410f084002ee9f4283e17.png" alt="image.png"></p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/0bde7d52b46933fb792556d0a8e1e22e.png" alt="image.png"></p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/75e145a13c5fcb791615337d19027fe8.png" alt="image.png"></p>
+<p>对于Hexo的设置文件，_config.yml，也可以手动进行编辑。编辑时敬请参考<a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration.html">Hexo的设置文档</a>。</p>
+<p><img src="https://ssimg.frontenduse.top/article/2021/05/12/c7e9488e5d0b858d15b10c898d2515a9.png" alt="image.png"></p>
+<h3 id="进阶：设置自己的域名"><a href="#进阶：设置自己的域名" class="headerlink" title="进阶：设置自己的域名"></a>进阶：设置自己的域名</h3><h3 id="进阶：按需更改主题"><a href="#进阶：按需更改主题" class="headerlink" title="进阶：按需更改主题"></a>进阶：按需更改主题</h3><p>若需更换其他的主题，敬请参阅<a target="_blank" rel="noopener" href="https://test.matataki.io/p/102649#%E7%8E%B0%E6%9C%89%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D">《想要自己切换独立子站的主题 》</a>。</p>
+<h3 id="遇到错误怎么办？"><a href="#遇到错误怎么办？" class="headerlink" title="遇到错误怎么办？"></a>遇到错误怎么办？</h3><p>创建失败：<del>可先检查GitHub下有无重名的repo。若有，则需删除再试。</del></p>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><ol>
+<li>发文相关</li>
+</ol>
+<p>Q: 当我在Matataki中选择发布文章到我的独立子站后，文章内容还会储存到IPFS上吗？</p>
+<p>A: 不会，只会储存至用户所设置的GitHub repo中。</p>
+<ol start="2">
+<li>设置相关</li>
+</ol>
+<p>Q: 为什么我编辑了子站设置之后，子站却显示404/空白页面？</p>
+<p>A: 独立子站创建之后，需要发布一篇文章才会有页面的显示。或者也可能是因为输入了不正确的子站设置。敬请参阅Hexo的设置进行修改。</p>
+
+            </div>
+            
+                <div class="kratos-copyright text-center clearfix">
+                    <h5>本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+                </div>
+            
+            <footer class="kratos-entry-footer clearfix">
+                
+                    <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                    
+                    
+                        <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                        <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://kumoram.github.io/my-site-1/2021/05/Gh202105958aab5612f98576cb3c2af552c6c16d/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://kumoram.github.io/my-site-1/2021/05/Gh202105958aab5612f98576cb3c2af552c6c16d/";
+            const title         = "「子站教程beta」";
+            const excerpt       = `
+独立子站功能在👉测试网👈公测中
+
+
+独立子站是什么？目前Matataki的主页，是一个混合了各方文章的页面。我们希望能突出个人创作者的力量，给创作者拥有不一样的个人网站的权利。
+但是以现在的技术来说，创建个人网站是一个艰苦的工作...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                    
+                    </div>
+                
+                <div class="footer-tag clearfix">
+                    <div class="pull-left">
+                    <i class="fa fa-tags"></i>
+                        
+                    </div>
+                    <div class="pull-date">
+                    <span>最后编辑：2021-05-19</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+            <nav class="navigation post-navigation clearfix" role="navigation">
+                
+                <div class="nav-previous clearfix">
+                    <a title=" gao" href="/my-site-1/2021/05/Gh2021052ddd7c001094b5c89cab948143e0be78/">&lt; 上一篇</a>
+                </div>
+                
+                
+                <div class="nav-next clearfix">
+                    <a title=" 子站教程极速版" href="/my-site-1/2021/05/Gh2021057b20e14721dbbf1320fd0bf8daa0f104/">下一篇 &gt;</a>
+                </div>
+                
+            </nav>
+        
+        
+    </article>
+</section>
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">我的小站不需要描述（这个是描述）</p>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+
+            
+                
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/my-site-1/2021/05/Gh202105bd92bafc648cd94675702d60241c2c51/"><i class="fa  fa-book"></i> ff4</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/my-site-1/2021/05/Gh202105ac9e92a3a85212a7debdd3882d0ea401/"><i class="fa  fa-book"></i> 想要自己切换独立子站的主题</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/my-site-1/2021/05/Gh2021057b20e14721dbbf1320fd0bf8daa0f104/"><i class="fa  fa-book"></i> 子站教程极速版</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/my-site-1/2021/05/Gh202105958aab5612f98576cb3c2af552c6c16d/"><i class="fa  fa-book"></i> 子站教程beta</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/my-site-1/2021/05/Gh2021052ddd7c001094b5c89cab948143e0be78/"><i class="fa  fa-book"></i> gao</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/my-site-1/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://t.me/CandyUnion"><i class="fa fa-telegram"></i></a></li>
+                        
+                        
+                        
+                        <li><a target="_blank" rel="me" href="https://nya.one/@Candinya"><i class="fa fa fa-share-alt-square"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/Candinya"><i class="fa fa-github"></i></a></li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2021 我的小站（这个是标题） 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by that is me（这个是作者）.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+<script>const notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));</script>
+
+<script async src="/my-site-1/js/candy.min.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/my-site-1/js/kratosr.min.js"></script>
+<script defer src="/my-site-1/js/pjax.min.js"></script>
+
+
+    <script defer src="/my-site-1/js/kr-dark.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
