@@ -108,7 +108,7 @@ widgets:
 - category
 - tagcloud
 - posts
-avatarUri: /images/avatar.webp
+avatarUri: https://ssimg.frontenduse.top/avatar/2021/04/15/908fbfea933a541655daae501a254e3f.jpg
 
 # Fancybox 文章内图片单击放大
 fancybox: true
