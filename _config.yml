@@ -4,7 +4,7 @@ description: 我的小站不需要描述（这个是描述）
 keywords: keywords32
 author: that is me（这个是作者）
 language: es
-timezone: Etc/GMT+2
+timezone: Etc/GMT+8
 url: https://kumoram.github.io/my-site-1
 permalink: :title/
 permalink_defaults: null
